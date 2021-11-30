@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>PENGOLAH KATA</title>
+  <script src="scripts/algorithm.js"></script>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<p><font face="courier" ><h1 align="center">P E N G O L A H A N</h1></font></p>
+<p><font face="courier" ><h1 align="center">K A T A</h1></font></p>  
+<h3 align="center"> &nbsp;&nbsp; </h3> 
+<h3 align="center">Input :</h3> 
+ <h3 align="center"><textarea rows="12" cols="70" id="text1">
+ </textarea> </h3>
+
+<h3 align="center"><button onclick="run()">Submit</button></h3> 
+
+<script>
+function run(){
+	var text1 = document.getElementById("text1").value;
+	if(text1!=null){
+		var runtime = WORD(text1);
+	}
+}
+</script>
+
+<div id = "tab">
+        <table id = "list" cellspacing = "1px" cellpadding = "8px" text-align = "center" align="center">
+            <thead>
+                <tr>
+                 <td>H A S I L &nbsp;&nbsp; K A T A &nbsp;&nbsp; P O S I T I F</td>
+                </tr>
+              
+            </thead>
+
+            <tbody>
+
+
+            </tbody>
+        </table>
+</div>
+
+</body>
+</html>
